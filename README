@@ -1,3 +1,5 @@
 # Convert mp4 to h264
 gst-launch-1.0 -v filesrc location=store.mp4 ! qtdemux ! queue ! h264parse ! video/x-h264,stream-format=byte-stream  ! filesink location=store.h264
 
+- Requirements
+`$ bash download_requirements.sh
